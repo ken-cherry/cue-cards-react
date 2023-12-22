@@ -126,13 +126,9 @@ button:focus-visible {
 }
 /* 
 =================
-STYLES
+CUSTOM STYLES
 =================
 */
-body {
-  /* background-color: var(--clr-primary-7); */
-  text-transform: capitalize;
-}
 main {
   height: 100vh;
   display: grid;
