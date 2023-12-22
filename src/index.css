@@ -133,7 +133,8 @@ body {
   border: var(--primary-600) 5px solid;
   background-color: var(--grey-300);
 }
-.question p {
+.question p,
+.answer p {
   color: var(--black);
 }
 .btn,
