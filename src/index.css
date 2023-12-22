@@ -127,11 +127,13 @@ button:focus-visible {
 
 body {
   background-color: var(--grey-700);
+  text-transform: capitalize;
 }
 .card {
-  /* background-color: red; */
   border: var(--primary-600) 5px solid;
   background-color: var(--grey-300);
-  /* width: 17rem;
-  height: 17rem; */
+}
+.btn,
+.random {
+  text-transform: capitalize;
 }

@@ -4,37 +4,39 @@ import questions from "./data";
 
 function App() {
   const [index, setIndex] = useState(0);
-  const { showAnswer, setShowAnswer } = useState(false);
+  const [showAnswer, setShowAnswer] = useState(false);
 
   const { id, question, answer } = questions[index];
 
+  const checkNumber = (number) => {
+    if (number > questions.length - 1) {
+      return 0;
+    }
+    if (number < 0) {
+      return questions.length - 1;
+    }
+    return number;
+  };
   const nextQuestion = () => {
-    setIndex((currentIndex) => {
-      const newIndex = (currentIndex + 1) % question.length;
-      return newIndex;
+    setIndex((index) => {
+      let newIndex = index + 1;
+      return checkNumber(newIndex);
     });
   };
   const prevQuestion = () => {
-    setIndex((currentIndex) => {
-      const newIndex = (currentIndex - 1 + question.length) % question.length;
-      return newIndex;
+    setIndex((index) => {
+      let newIndex = index - 1 + question.length;
+      return checkNumber(newIndex);
     });
   };
   const randomQuestion = () => {
     let randomNumber = Math.floor(Math.random() * question.length);
     if (randomNumber === index) {
-      randomNumber + 1;
+      randomNumber = index + 1;
     }
-    const newIndex = randomNumber % question.length;
-    setIndex(newIndex);
+    let newIndex = randomNumber % question.length;
+    setIndex(checkNumber(randomNumber));
   };
-  // const toggleAnswer = () => {
-  //   if (showAnswer) {
-  //     setShowAnswer(false);
-  //     return;
-  //   }
-  //   setShowAnswer(true);
-  // };
 
   return (
     <>
@@ -48,9 +50,8 @@ function App() {
             >
               answer
             </button>
-            {showAnswer && <Answer />}
           </div>
-          <div className="answer"></div>
+          <div className="answer">{showAnswer && <p>{answer}</p>}</div>
         </section>
         <div className="buttons">
           <button className="prev btn" onClick={prevQuestion}>
@@ -69,7 +70,4 @@ function App() {
     </>
   );
 }
-const Answer = () => {
-  return <div>hello world</div>;
-};
 export default App;
