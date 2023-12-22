@@ -27,7 +27,7 @@ function App() {
   const prevQuestion = () => {
     setShowAnswer(false);
     setIndex((index) => {
-      let newIndex = index - 1 + question.length;
+      let newIndex = index - 1;
       return checkNumber(newIndex);
     });
   };
@@ -63,8 +63,6 @@ function App() {
               <button className="prev btn" onClick={prevQuestion}>
                 prev
               </button>
-            </div>
-            <div>
               <button className="next btn" onClick={nextQuestion}>
                 next
               </button>
