@@ -12,6 +12,19 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  /* dark shades of primary color*/
+  --clr-primary-1: hsl(43, 86%, 17%);
+  --clr-primary-2: hsl(43, 77%, 27%);
+  --clr-primary-3: hsl(43, 72%, 37%);
+  --clr-primary-4: hsl(42, 63%, 48%);
+  /* primary/main color */
+  --clr-primary-5: hsl(42, 78%, 60%);
+  /* lighter shades of primary color */
+  --clr-primary-6: hsl(43, 89%, 70%);
+  --clr-primary-7: hsl(43, 90%, 76%);
+  --clr-primary-8: hsl(45, 86%, 81%);
+  --clr-primary-9: hsl(45, 90%, 88%);
+  --clr-primary-10: hsl(45, 100%, 96%);
   /* colors */
   --primary-100: #e2e0ff;
   --primary-200: #c1beff;
@@ -95,13 +108,13 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: var(--primary-400);
+  background-color: var(--clr-primary-5);
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  background-color: var(--primary-600);
-  border-color: #646cff;
+  background-color: var(--clr-primary-4);
+  border-color: var(--clr-primary-2);
 }
 button:focus,
 button:focus-visible {
@@ -111,8 +124,13 @@ button:focus-visible {
   margin: 0.5rem 0.5rem;
   color: var(--black);
 }
+/* 
+=================
+STYLES
+=================
+*/
 body {
-  background-color: var(--grey-700);
+  /* background-color: var(--clr-primary-7); */
   text-transform: capitalize;
 }
 main {
@@ -121,12 +139,17 @@ main {
   grid-template-rows: repeat(2, 1fr);
   justify-content: center;
 }
+/* 
+=================
+CARD
+=================
+*/
 .card {
   display: grid;
   height: 98vh;
   width: 98vw;
-  border: var(--primary-600) 5px solid;
-  background-color: var(--grey-300);
+  border: var(--clr-primary-1) 5px solid;
+  background-color: var(--clr-primary-7);
   text-align: center;
 }
 .section {
@@ -137,6 +160,11 @@ main {
 .answer p {
   color: var(--black);
 }
+/* 
+=================
+BUTTONS
+=================
+*/
 .buttons {
   display: grid;
   align-content: flex-end;
