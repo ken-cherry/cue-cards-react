@@ -146,6 +146,7 @@ CARD
   width: 98vw;
   border: var(--clr-primary-1) 5px solid;
   background-color: var(--clr-primary-7);
+  justify-content: center;
   text-align: center;
 }
 .section {
@@ -155,6 +156,14 @@ CARD
 .question p,
 .answer p {
   color: var(--black);
+}
+.answer {
+  display: grid;
+  max-width: 768px;
+  border: var(--clr-primary-1) 2px solid;
+  border-radius: var(--borderRadius);
+  background-color: var(--clr-primary-5);
+  padding: 1rem 1rem;
 }
 /* 
 =================

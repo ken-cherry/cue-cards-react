@@ -49,17 +49,19 @@ function App() {
           <section className="section">
             <div className="question" key={id}>
               <p>{question}</p>
-              <button
-                className="answer btn"
-                onClick={() => setShowAnswer(!showAnswer)}
-              >
-                answer
-              </button>
             </div>
             <div className="answer">{showAnswer && <p>{answer}</p>}</div>
           </section>
           <div className="buttons">
             <div>
+              <div>
+                <button
+                  className="answerBtn btn"
+                  onClick={() => setShowAnswer(!showAnswer)}
+                >
+                  answer
+                </button>
+              </div>
               <button className="prev btn" onClick={prevQuestion}>
                 prev
               </button>
