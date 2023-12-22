@@ -40,7 +40,8 @@ function App() {
     let newIndex = randomNumber % question.length;
     setIndex(checkNumber(randomNumber));
   };
-
+  console.log(id);
+  console.log(question);
   return (
     <>
       <main>
@@ -58,14 +59,18 @@ function App() {
             <div className="answer">{showAnswer && <p>{answer}</p>}</div>
           </section>
           <div className="buttons">
-            <button className="prev btn" onClick={prevQuestion}>
-              prev
-            </button>
-            <button className="next btn" onClick={nextQuestion}>
-              next
-            </button>
-            <div className="randomBtn btn">
-              <button className="random" onClick={randomQuestion}>
+            <div>
+              <button className="prev btn" onClick={prevQuestion}>
+                prev
+              </button>
+            </div>
+            <div>
+              <button className="next btn" onClick={nextQuestion}>
+                next
+              </button>
+            </div>
+            <div>
+              <button className="random btn" onClick={randomQuestion}>
                 random question
               </button>
             </div>

@@ -77,10 +77,10 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  /* display: flex;
+  place-items: center; */
+  /* min-width: 320px; */
+  /* min-height: 100vh; */
 }
 
 h1 {
@@ -109,22 +109,37 @@ button:focus-visible {
 }
 .btn {
   margin: 0.5rem 0.5rem;
-  color: white;
+  color: var(--black);
 }
 body {
   background-color: var(--grey-700);
   text-transform: capitalize;
 }
-/* main {
-  height: 100%;
-} */
+main {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+}
 .card {
+  display: grid;
+  height: 98vh;
+  width: 98vw;
   border: var(--primary-600) 5px solid;
   background-color: var(--grey-300);
+  text-align: center;
+}
+.section {
+  display: grid;
+  align-content: flex-start;
 }
 .question p,
 .answer p {
   color: var(--black);
+}
+.buttons {
+  display: grid;
+  align-content: flex-end;
 }
 .btn,
 .random {
