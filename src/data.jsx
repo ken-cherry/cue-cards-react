@@ -152,7 +152,7 @@ const questions = [
     id: 29,
     question: "Describe Auto Batching",
     answer:
-      "If you call the state update function multiple times in a short period of time, React will only perform a single re-render for all  of the updates.",
+      "If you call the state update function multiple times in a short period of time, React will only perform a single re-render for all of the updates.",
   },
   {
     id: 30,
@@ -298,26 +298,26 @@ const questions = [
     question: "Which way are props passed in React",
     answer: "Down, known as Prop Drilling",
   },
-  // {
-  //   id: 0,
-  //   question: "",
-  //   answer: "",
-  // },
-  // {
-  //   id: 0,
-  //   question: "",
-  //   answer: "",
-  // },
-  // {
-  //   id: 0,
-  //   question: "",
-  //   answer: "",
-  // },
-  // {
-  //   id: 0,
-  //   question: "",
-  //   answer: "",
-  // },
+  {
+    id: 56,
+    question: "What is the first argument fetch() is looking for?",
+    answer: "The  url",
+  },
+  {
+    id: 57,
+    question: "What does fetch() return?",
+    answer: "A promise",
+  },
+  {
+    id: 58,
+    question: "What does async() always return  by default?",
+    answer: "A promise",
+  },
+  {
+    id: 0,
+    question: "",
+    answer: "",
+  },
   // {
   //   id: 0,
   //   question: "",
