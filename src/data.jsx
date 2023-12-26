@@ -128,19 +128,19 @@ const questions = [
     id: 25,
     question: "Describe render",
     answer:
-      "The first time the compnent tree  risendered to the DOM. It happens when the application first loads, or when the root conpnent is first rendered. Also known as mounting the components",
+      "The first time the component tree is rendered to the DOM. It happens when the application first loads, or when the root component is first rendered. Also known as mounting the components",
   },
   {
     id: 26,
     question: "Describe re-render",
     answer:
-      "Happen when the conponent's state or props change, and the conponent needs to be updated in the DOM to reflect these changes. React uses a virtual DOM to optimize the process of updating the actual DOM, so that only the necessary changes are made.",
+      "Happen when the component's state or props change, and the component needs to be updated in the DOM to reflect these changes. React uses a virtual DOM to optimize the process of updating the actual DOM, so that only the necessary changes are made.",
   },
   {
     id: 27,
     question: "How is a re-render triggered?",
     answer:
-      "1. Changeing the conponent's state or props. 2. When the parent element re-renders, even if the component's state or props have not changed.",
+      "1. Changing the component's state or props. 2. When the parent element re-renders, even if the component's state or props have not changed.",
   },
   {
     id: 28,
@@ -241,7 +241,7 @@ const questions = [
     id: 45,
     question: "How are Short-circuit evaluations useful?",
     answer:
-      "In cases where you want to perform a certain action only if a certain condition is met, or you want to return a default balue if a certain conditon is not met",
+      "In cases where you want to perform a certain action only if a certain condition is met, or you want to return a default value if a certain condition is not met",
   },
   {
     id: 46,
