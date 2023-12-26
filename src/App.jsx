@@ -59,7 +59,7 @@ function App() {
                   className="answerBtn btn"
                   onClick={() => setShowAnswer(!showAnswer)}
                 >
-                  answer
+                  {showAnswer ? "Hide " : "Show "} Answer
                 </button>
               </div>
               <button className="prev btn" onClick={prevQuestion}>

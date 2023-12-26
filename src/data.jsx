@@ -217,25 +217,25 @@ const questions = [
   {
     id: 41,
     question: "What values are falsy n JavaScript?",
-    answer: "false, 0, empty string, null undefined, NaN.",
+    answer: "false, 0, '' empty string, null, undefined, NaN.",
   },
   {
     id: 42,
     question: "Describe short-circuit evaluation.",
     answer:
-      "Is a technique that allows you to use logicacl operators to perform conditional evaluations in a concise way",
+      "Is a technique that allows you to use logical operators to perform conditional evaluations in a concise way",
   },
   {
     id: 43,
     question: "The && operator returns?",
     answer:
-      "The first operand if it is falsy, or the second operand if the first operand is truthy.",
+      "The first value if it is falsy, or the second value if the first operand is truthy.",
   },
   {
     id: 44,
     question: "What does the || operator return?",
     answer:
-      "Returns the first operand if it is truthy, or the second operand if the first operand is falsy.",
+      "Returns the first value if it is truthy, or the second value if the first value is false",
   },
   {
     id: 45,
@@ -314,15 +314,16 @@ const questions = [
     answer: "A promise",
   },
   {
-    id: 0,
-    question: "",
-    answer: "",
+    id: 59,
+    question: "Convention for naming boolean value for useState()?",
+    answer: "is and then the state name",
   },
-  // {
-  //   id: 0,
-  //   question: "",
-  //   answer: "",
-  // },
+  {
+    id: 60,
+    question: "Three states of fetching data?",
+    answer:
+      "Loading - waiting for data to arrive, Error - there was an error, Success - received data",
+  },
   // {
   //   id: 0,
   //   question: "",
