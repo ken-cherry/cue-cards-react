@@ -324,21 +324,22 @@ const questions = [
     answer:
       "Loading - waiting for data to arrive, Error - there was an error, Success - received data",
   },
-  // {
-  //   id: 0,
-  //   question: "",
-  //   answer: "",
-  // },
-  // {
-  //   id: 0,
-  //   question: "",
-  //   answer: "",
-  // },
-  // {
-  //   id: 0,
-  //   question: "",
-  //   answer: "",
-  // },
+  {
+    id: 61,
+    question: "How do you focus on the input for a form?",
+    answer:
+      "By having the htmlFor value of the label element and the id value of the input element match.",
+  },
+  {
+    id: 62,
+    question: "Controlled inputs need what two things to work?",
+    answer: "value={} and onChange={}",
+  },
+  {
+    id: 63,
+    question: "What is used when you want to handle the form submission?",
+    answer: "preventDefault()",
+  },
   // {
   //   id: 0,
   //   question: "",
