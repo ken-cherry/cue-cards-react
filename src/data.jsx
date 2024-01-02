@@ -340,16 +340,18 @@ const questions = [
     question: "What is used when you want to handle the form submission?",
     answer: "preventDefault()",
   },
-  // {
-  //   id: 0,
-  //   question: "",
-  //   answer: "",
-  // },
-  // {
-  //   id: 0,
-  //   question: "",
-  //   answer: "",
-  // },
+  {
+    id: 64,
+    question: "Describe useRef()",
+    answer:
+      "Does not trigger re-render. Preserves the value between renders. Targets DOM nodes/elements directly",
+  },
+  {
+    id: 65,
+    question: "Describe custom hooks.",
+    answer:
+      "Same rules as regular hooks. Simplify component, less code. Re-use in other projects.",
+  },
   // {
   //   id: 0,
   //   question: "",
