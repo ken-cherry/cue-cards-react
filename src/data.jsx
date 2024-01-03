@@ -352,11 +352,12 @@ const questions = [
     answer:
       "Same rules as regular hooks. Simplify component, less code. Re-use in other projects.",
   },
-  // {
-  //   id: 0,
-  //   question: "",
-  //   answer: "",
-  // },
+  {
+    id: 66,
+    question: "Describe useContext()",
+    answer:
+      "Allows parent to pass down props without having to go through other components to get to the intended component",
+  },
   // {
   //   id: 0,
   //   question: "",
