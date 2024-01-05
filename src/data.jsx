@@ -358,11 +358,12 @@ const questions = [
     answer:
       "Allows parent to pass down props without having to go through other components to get to the intended component",
   },
-  // {
-  //   id: 0,
-  //   question: "",
-  //   answer: "",
-  // },
+  {
+    id: 67,
+    question: "Describe useReducer",
+    answer:
+      "useReducer is very similar to useState, but it lets you move the state update logic from event handlers into a single function outside of your component.",
+  },
   // {
   //   id: 0,
   //   question: "",
