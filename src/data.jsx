@@ -364,6 +364,107 @@ const questions = [
     answer:
       "useReducer is very similar to useState, but it lets you move the state update logic from event handlers into a single function outside of your component.",
   },
+  {
+    id: 68,
+    question: "Describe HTTP methods",
+    answer:
+      "They define the types of actions that con be performed on a web server to retrieve, modify or delete information.",
+  },
+  {
+    id: 69,
+    question: "What are the most commonly used HTTP methods?",
+    answer: "GET, POST, PATCH, DELETE",
+  },
+  {
+    id: 70,
+    question: "What is the default HTTP method used by web browsers?",
+    answer: "GET",
+  },
+  {
+    id: 71,
+    question:
+      "Which HTTP method is used to send data to a server to create or update a resource?",
+    answer: "POST",
+  },
+  {
+    id: 72,
+    question: "Which HTTP method is used to update only part of a resource?",
+    answer: "PATCH",
+  },
+  {
+    id: 73,
+    question: "Which HTTP method is used to remove a resource from a server?",
+    answer: "DELETE",
+  },
+  {
+    id: 74,
+    question: "All HTTP methods combined is known as?",
+    answer: "CRUD (Create, Read, Update, and Delete)",
+  },
+  {
+    id: 75,
+    question: "Describe React Query",
+    answer:
+      "Is a state management library that simplifies the process of fetching, caching and updating data in React apps.",
+  },
+  {
+    id: 76,
+    question: "What are the benefits of React Query?",
+    answer:
+      "Automatic background refetching, caching and stale data management, error handling, and easy pagination and infinite scrolling.",
+  },
+  {
+    id: 77,
+    question: "React Query vs useEffect()",
+    answer:
+      "React Query provides a more declarative and centralized approach to managing data in React, which results in cleaner and more efficient code. It also reduces boilerplate code and improves performance by minimizing unnecessary re-renders and network requests.",
+  },
+  {
+    id: 78,
+    question:
+      "In React Query version 5, isLoading has been replaced with what?",
+    answer: "isPending",
+  },
+  {
+    id: 0,
+    question: "",
+    answer: "",
+  },
+  // {
+  //   id: 0,
+  //   question: "",
+  //   answer: "",
+  // },
+  // {
+  //   id: 0,
+  //   question: "",
+  //   answer: "",
+  // },
+  // {
+  //   id: 0,
+  //   question: "",
+  //   answer: "",
+  // },
+  // {
+  //   id: 0,
+  //   question: "",
+  //   answer: "",
+  // },
+  // {
+  //   id: 0,
+  //   question: "",
+  //   answer: "",
+  // },
+  // {
+  //   id: 0,
+  //   question: "",
+  //   answer: "",
+  // },
+  // {
+  //   id: 0,
+  //   question: "",
+  //   answer: "",
+  // },
   // {
   //   id: 0,
   //   question: "",
