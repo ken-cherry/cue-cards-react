@@ -426,9 +426,10 @@ const questions = [
     answer: "isPending",
   },
   {
-    id: 0,
-    question: "",
-    answer: "",
+    id: 79,
+    question: "Describe useMutation",
+    answer:
+      "useMutation comes with some helper options that allow quick and easy side-effects at any stage during the mutation lifecycle. These come in handy for both invalidating and refetching queries after mutations",
   },
   // {
   //   id: 0,
