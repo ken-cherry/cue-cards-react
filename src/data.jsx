@@ -442,16 +442,18 @@ const questions = [
   //   question: "queryClient",
   //   answer: "",
   // },
-  // {
-  //   id: 0,
-  //   question: "",
-  //   answer: "",
-  // },
-  // {
-  //   id: 0,
-  //   question: "",
-  //   answer: "",
-  // },
+  {
+    id: 82,
+    question: "What is SPA",
+    answer:
+      "Single-Page Application that dynamically updates its content without requiring a full page reload.",
+  },
+  {
+    id: 83,
+    question: "Describe React Router",
+    answer:
+      "It is a JavaScript library used in React applications to handle routing and navigation.",
+  },
   // {
   //   id: 0,
   //   question: "",
