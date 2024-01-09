@@ -431,14 +431,15 @@ const questions = [
     answer:
       "useMutation comes with some helper options that allow quick and easy side-effects at any stage during the mutation lifecycle. These come in handy for both invalidating and refetching queries after mutations",
   },
+  {
+    id: 80,
+    question: "createContext.",
+    answer:
+      "Allows components to pass information deep down without explicitly passing props.",
+  },
   // {
-  //   id: 0,
-  //   question: "",
-  //   answer: "",
-  // },
-  // {
-  //   id: 0,
-  //   question: "",
+  //   id: 81,
+  //   question: "queryClient",
   //   answer: "",
   // },
   // {
