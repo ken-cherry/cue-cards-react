@@ -158,7 +158,7 @@ const questions = [
     id: 30,
     question: "Describe useEffect",
     answer:
-      "Allows you to perform side effects in function components. Examples: subscriptions, fetching data, directly updating the DOM, event listeners, timers, etc. Accepts two arguments: callback  function and dependency array (optional). By default runs on each render. Callback can't return promise, can't be async. If dependency array empty, runs only on ititial render.",
+      "Allows you to perform side effects in function components. Examples: subscriptions, fetching data, directly updating the DOM, event listeners, timers, etc. Accepts two arguments: callback  function and dependency array (optional). By default runs on each render. Callback can't return promise, can't be async. If dependency array empty, runs only on initial render.",
   },
   {
     id: 31,
