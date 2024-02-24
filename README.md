@@ -5,6 +5,8 @@
 - Vite
 - nanoid
 
+# Launch project in your preferred IDE
+
 ```sh
 npm install
 ```
