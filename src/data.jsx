@@ -454,11 +454,11 @@ const questions = [
     answer:
       "It is a JavaScript library used in React applications to handle routing and navigation.",
   },
-  // {
-  //   id: 0,
-  //   question: "",
-  //   answer: "",
-  // },
+  {
+    id: 84,
+    question: "Describe <Outlet /> from react-router-dom",
+    answer: "",
+  },
   // {
   //   id: 0,
   //   question: "",
