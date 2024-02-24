@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import questions from "./data";
+import { nanoid } from "nanoid";
 
 function App() {
   const [index, setIndex] = useState(0);
@@ -40,14 +41,13 @@ function App() {
     let newIndex = randomNumber % question.length;
     setIndex(checkNumber(randomNumber));
   };
-  console.log(id);
-  console.log(question);
+
   return (
     <>
       <main>
         <article className="card">
           <section className="section">
-            <div className="question" key={id}>
+            <div className="question" key={nanoid()}>
               <p>{question}</p>
             </div>
             <div className="answer">{showAnswer && <p>{answer}</p>}</div>

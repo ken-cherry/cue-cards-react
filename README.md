@@ -3,6 +3,7 @@
 # Technologies used to build this app:
 
 - Vite
+- nanoid
 
 ```sh
 npm install
