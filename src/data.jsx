@@ -2,423 +2,259 @@ const questions = [
   {
     question: "What is React?",
     answer:
-      "React is an Open Source view library created and maintained by Facebook. It's a great tool to render the User Interface (UI) of modern web applications.",
+      "React is an Open Source view library for building user interfaces or UI components, developed by Facebook.",
   },
   {
-    question: "The node_modules folder contains?",
+    question: "Describe JSX",
     answer:
-      "All dependencies required by the app. Main dependencies also listed in package.json",
+      "JSX (JavaScriptXML) is a syntax extension for JavaScript recommended by React for describing what the UI should look like.",
   },
   {
-    question: "The public folder contains?",
+    question: "What is the virtual DOM",
     answer:
-      "index.html, title, fonts, css, favicon and id=root which is our entire app",
+      "The virtual DOM is a lightweight copy of the actual DOM in memory. React uses it to improve performance by updating only the changed parts fo the actual DOM",
   },
   {
-    question: "Describe the src folder.",
+    question: "What is the significance of keys in React?",
     answer:
-      "In simplest form it's the brain of our app. This is where we will do all of our work. src/index.js is the JavaScript entry point.",
+      "Keys are used to uniquely identify and differentiate between components in React. They help React identify which items have changed, added, or removed.",
   },
   {
-    question: "Describe gitignore",
-    answer: "Specifies which files source control (Git) should ignore",
-  },
-  {
-    question: "Describe package.json",
+    question: "What are state and props in React?",
     answer:
-      "Every Node.js project has a package.json and it contains info about our project, for example list of dependencies and scripts",
+      "State is an internal data store that belongs to a specific component, and it can be changed over time. Props are properties passed to a component from its parent, and they are immutable.",
   },
   {
-    question: "Describe package-lock.json",
-    answer: "A snapshot of the entire dependency tree",
-  },
-  {
-    question: "Describe README",
+    question: "What is the difference between state and props?",
     answer:
-      "The markdown file where you can share more info about the project for example build instructions and summary",
+      "State is internal to a component and can be changed over time, while props are external and passed to a component.",
   },
   {
-    question: "Describe a React Component",
+    question: "Describe the concept of lifting state up.",
     answer:
-      "Starts with a capital letter, must return JSX (html), always use a close tag, and export the Component",
+      "Lifting state up is a pattern where the state of a child component is moved to its parent component, allowing multiple child components to share the same state.",
   },
   {
-    question: "How many Root Components are there in a React App?",
-    answer: "One",
+    question: "What is the purpose of setState in React?",
+    answer:
+      "setState is used to update the state of component and trigger a re-render.",
   },
   {
-    question: "How do you stop the React server",
-    answer: "ctrl + c",
+    question: "What is React Router?",
+    answer:
+      "React Router is a library that enables navigation among views in a React application, allowing for the development of single-page applications.",
   },
   {
-    question: "What is a React Component",
-    answer: "A function",
+    question: "Explain the useEffect hook.",
+    answer:
+      "The useEffect hook in React is used for side effects in functional components, such as data fetching, subscriptions, or manually changing the DOM.",
+  },
+  {
+    question: "What are controlled components in React?",
+    answer:
+      "Controlled components are components where the form data is controlled by React state. The input elements receive their current value from the state and have their value updated through a callback function.",
+  },
+  {
+    question: "What is Redux, and why is it used?",
+    answer:
+      "Redux is a state management library for JavaScript applications, commonly used with React. It helps manage the state of an application in a predictable way.",
+  },
+  {
+    question: "Explain the concept of higher-order components (HOC).",
+    answer:
+      "Higher-order components are functions that take a component and return a new component with additional features or props",
+  },
+  {
+    question: "What is the purpose of the useReducer hook?",
+    answer:
+      "The useReducer hook is used for managing complex state logic in React applications. It is an alternative to useState when state transitions are more complex.",
+  },
+  {
+    question: "What is the significance of the key attribute in React lists?",
+    answer:
+      "The key attribute is used to uniquely identify elements in a list. It helps React efficiently update the DOM when the list changes.",
   },
   {
     question:
-      "According to JSX Rules, a React Component must always return what?",
-    answer: "Only one parent element",
+      "What is the difference between class components and functional components?",
+    answer:
+      "Class components use ES6 classes and have additional features like state and lifecycle methods, while functional components are simpler and are often used with hooks.",
   },
   {
-    question: "<> </> is shorthand for what?",
-    answer: "React Fragment",
+    question: "Explain the concept of refs in React.",
+    answer:
+      "Refs are used to access the DOM directly or to reference a React element. They provide a way to interact with the underlying DOM nodes in React.",
   },
   {
-    question: "All React elements need to be?",
-    answer: "Closed />",
+    question: "What are React hooks?",
+    answer:
+      "React hooks are functions that allow functional components to use state, lifecycle methods, adn other React features.",
+  },
+  {
+    question: "Explain the purpose of the useContext hook.",
+    answer:
+      "The useContext hook is used to access the value of a React context within a functional component.",
   },
   {
     question:
-      "What must be used if the opening tag isn't on the same line as the return statement?",
-    answer: "()",
-  },
-  {
-    question: "Can Components be nested",
-    answer: "Yes",
-  },
-  {
-    question: "What folder optimizes images?",
-    answer: "src folder",
-  },
-  {
-    question: "Can you render Objects in React?",
-    answer: "No",
-  },
-  {
-    question: "Describe useState",
+      "What is the significance of teh dangerouslySetInnerHTML property in React?",
     answer:
-      "returns an array with two elements: the current state value, and a function that we can use to update the state. Accepts default value as an argument. State update triggers re-render. Preserves the value between the renders. ",
+      "dangerouslySetInnerHTML is used to inject HTML directly into a component, but it should be used with caution to avoid cross-site scripting (XSS) vulnerabilities. ",
   },
   {
-    question: "What type of imports does React use?",
-    answer: "Default and Named",
-  },
-  {
-    question: "What type of import is this: import {useState}",
-    answer: "Named import",
-  },
-  {
-    question: "What type of import is this: import Gallery from './Gallery.jsx",
-    answer: "Default import",
-  },
-  {
-    question: "What is 'State' in React.js",
+    question: "What is the purpose of the componentDidMount lifecycle method?",
     answer:
-      "A built-in object that is used to contain data or information about the component. A component's state can change over time; whenever it changes, the component re-renders. The state object is initialized in the constructor. The state object can store multiple properties.",
+      "componentDidMount is invoked immediately after a component is mounted, making it suitable for initial AJAX requests or setting up subscriptions.",
   },
   {
-    question: "Describe render",
+    question: "What is the React developer tool?",
     answer:
-      "The first time the component tree is rendered to the DOM. It happens when the application first loads, or when the root component is first rendered. Also known as mounting the components",
+      "The React Developer Tools is a browser extension that allows developers to inspect and debug React component hierarchies in the Chrome and Firefox browsers.",
   },
   {
-    question: "Describe re-render",
+    question: "Explain the concept of context in React.",
     answer:
-      "Happen when the component's state or props change, and the component needs to be updated in the DOM to reflect these changes. React uses a virtual DOM to optimize the process of updating the actual DOM, so that only the necessary changes are made.",
+      "Context provides a way to pass data through the component tree without having to pass props manually at every level. It is often used to share values like themes or authentication status.",
   },
   {
-    question: "How is a re-render triggered?",
+    question: "What are the advantages of using React?",
     answer:
-      "1. Changing the component's state or props. 2. When the parent element re-renders, even if the component's state or props have not changed.",
+      "React offers a virtual DOM for improved performance, a component-based architecture for modular development, and a strong community support, among other advantages.",
   },
   {
-    question: "What are the General Rules of Hooks?",
+    question: "How does React handle prop drilling, and how can it be avoided?",
     answer:
-      "1. Starts with use. Component must start with uppercase. 2. Invoke inside function/component body. Don't call hooks conditionally. 3. Set functions don't update state immediately",
+      "Prop drilling occurs when props are passed down through multiple levels of components. It can be avoided by using context or state management libraries like Redux.",
   },
   {
-    question: "Describe Auto Batching",
+    question: "What is the purpose of teh shouldComponentsUpdate method?",
     answer:
-      "If you call the state update function multiple times in a short period of time, React will only perform a single re-render for all of the updates.",
+      "shouldComponentUpdate is a lifecycle method that determines if a component should re-render. Developers can use it to optimize performance by preventing unnecessary renders.",
   },
   {
-    question: "Describe useEffect",
+    question: "Explain the significance of React Fragments.",
     answer:
-      "Allows you to perform side effects in function components. Examples: subscriptions, fetching data, directly updating the DOM, event listeners, timers, etc. Accepts two arguments: callback  function and dependency array (optional). By default runs on each render. Callback can't return promise, can't be async. If dependency array empty, runs only on initial render.",
+      "React Fragments allow developers to group multiple elements without adding an extra node to the DOM, helping to keep the structure clean.",
   },
   {
-    question: "What does this return: async ()=>{} return",
-    answer: "A promise",
-  },
-  {
-    question:
-      "How do you make the dependency array only run on initial render with useEffect?",
-    answer: "[ ]",
-  },
-  {
-    question: "Explain how catch(error) works with fetch()",
-    answer: "The catch(error) does not catch 404.",
-  },
-  {
-    question: "Describe setTimeOut",
+    question: "What is the significance of the key prop in React Router?",
     answer:
-      "A global Method that sets a timer which executes a function or specified piece of code once the timer expires. setTimeOut is an async function.",
+      "The key prop in React Router is used to force the remounting of a component when the key changes, ensuring that the component is fully reinitialized.",
   },
   {
-    question:
-      "What is this code called: const [user, setUser] = useState(null)",
-    answer: "State value",
-  },
-  {
-    question: "How to handle fetch error gotcha?",
-    answer: "if (!resp.ok){}",
-  },
-  {
-    question: "Can React Hooks be inside if statements?",
-    answer: "No",
-  },
-  {
-    question: "What order are hooks called in?",
-    answer: "In the exact order they are arranged.",
-  },
-  {
-    question: "Where are hooks placed in your function?",
-    answer: "At the top",
-  },
-  {
-    question:
-      "What are count and setCount in this statement: const [count, setCount] = useState(4)",
-    answer: "Count is the state, setCount is the function.",
-  },
-  {
-    question: "What values are falsy n JavaScript?",
-    answer: "false, 0, '' empty string, null, undefined, NaN.",
-  },
-  {
-    question: "Describe short-circuit evaluation.",
+    question: "What is the purpose of the forwardRef function in React?",
     answer:
-      "Is a technique that allows you to use logical operators to perform conditional evaluations in a concise way",
+      "forwardRef is used to forward refs through components, allowing parent components to interact with the child's DOM node.",
   },
   {
-    question: "The && operator returns?",
+    question: "Explain the concept of error boundaries in React.",
     answer:
-      "The first value if it is falsy, or the second value if the first operand is truthy.",
+      "Error boundaries are components that catch JavaScript errors anywhere in their child component tree and log those errors, display a fallback UI, or take other actions.",
   },
   {
-    question: "What does the || operator return?",
+    question: "What is the significance of the memo function in React.",
     answer:
-      "Returns the first value if it is truthy, or the second value if the first value is false",
+      "memo is a higher-order component that memorizes the rendering of a functional component, preventing unnecessary re-renders if the props have not changed.",
   },
   {
-    question: "How are Short-circuit evaluations useful?",
+    question: "How does React handle forms?",
     answer:
-      "In cases where you want to perform a certain action only if a certain condition is met, or you want to return a default value if a certain condition is not met",
+      "React handles forms by using controlled components, where form data is controlled by the React state.",
+  },
+  {
+    question: "Explain the purpose of the useMemo hook.",
+    answer:
+      "The useMemo hook is used to memoize the result of a function, preventing unnecessary calculations and improving performance.",
+  },
+  {
+    question: "What is the significance of the useCallback hook?",
+    answer:
+      "useCallback is used to memoize call functions, preventing them from being recreated on every render.",
+  },
+
+  {
+    question: "What are React portals?",
+    answer:
+      "React portals provide a way to render children into a DOM node that exists outside the parent component's hierarchy.",
+  },
+  {
+    question: "Explain the concept of suspense in React",
+    answer:
+      "Suspense is a feature in React that allows components to 'wait' for something before rendering, such as data fetching or code splitting.",
+  },
+  {
+    question: "What is the purpose of the useEffect cleanup function?",
+    answer:
+      "The cleanup function in useEffect is used to perform cleanup tasks, such as unsubscribing from subscriptions or clearing intervals, when a component is unmounted.",
+  },
+  {
+    question: "How does React handle routing?",
+    answer:
+      "React can handle routing using the React Router library, which provides a way to navigate between different views or pages in a React application.",
+  },
+  {
+    question: "What is the purpose of the useLayoutEffect hook?",
+    answer:
+      "useLayoutEffect is similar to useEffect, but it fires synchronously after all DOM mutations. It is often used for measuring and synchronizing layout.",
+  },
+  {
+    question: "Explain the concept of lazy loading in React.",
+    answer:
+      "Lazy loading is a technique where components or modules are loaded only when they are actually needed, improving initial load times.",
+  },
+  {
+    question: "What is the significance of the React.memo function?",
+    answer:
+      "React.memo is a higher-order component that memoizes the rendering of a functional component, preventing unnecessary re-renders if the props have not changed.",
+  },
+  {
+    question: "How does React handle code splitting?",
+    answer:
+      "React supports code splitting, allowing developers to split their code into smaller chunks that are loaded on demand, improving performance by reducing the initial bundle size.",
+  },
+  {
+    question: "What is the purpose of the useImperativeHandle hook?",
+    answer:
+      "useImperativeHandle is used to customize the instance value that is exposed when using React.forwardRef.",
+  },
+  {
+    question: "Explain the concept of the useDebugValue hook.",
+    answer:
+      "useDebugValue is used to display a label ofr custom hooks in React DevTools.",
+  },
+  {
+    question: "What is the purpose of the useState hook?",
+    answer:
+      "the useState hook is used to add state to functional components in React.",
   },
   {
     id: 46,
     question:
-      "Output of: const {text, setText} = useState(''); <div>Falsy OR : {text || 'hello world'}</div>",
-    answer: "Falsy OR :hello world",
+      "Explain the significance of the SuspenseList component in React.",
+    answer:
+      "SuspenseList is a component that allows developers to coordinate the lading of multiple components in a way that provides a better user experience.",
   },
   {
     question:
-      "Output of: const [text, setText] = useState(''); <div>Falsy OR : {text && 'hello world'}</div>",
-    answer: "Falsy AND :",
-  },
-  {
-    question:
-      "Output of: const [name, setName] = useState('susan'); <div>Truthy OR : {name || 'hello world'}</div>",
-    answer: "susan",
-  },
-  {
-    question:
-      "Output of: const [name, setName] = useState('susan'); <div>Truthy OR : {name && 'hello world'}</div>",
-    answer: "Truthy AND : hello world",
-  },
-  {
-    question:
-      "Explain output of: const[isEditing, setIsEditing] useState(false); <button className='btn'>{isEditing ? 'edit' : 'add'}</button>",
-    answer: "",
-  },
-  {
-    id: 51,
-    q: "How do you install react-icons",
-    answer: "npm install react-icons --save",
-  },
-  {
-    question: "How do you access installed react-icons",
-    answer: "import {IconName} from 'react-icons'",
-  },
-  {
-    question: "Your entire React gets injected where?",
-    answer: "<div id='root'></div>",
-  },
-  {
-    question: "What does an expression return?",
-    answer: "A value",
-  },
-  {
-    question: "Which way are props passed in React",
-    answer: "Down, known as Prop Drilling",
-  },
-  {
-    question: "What is the first argument fetch() is looking for?",
-    answer: "The  url",
-  },
-  {
-    question: "What does fetch() return?",
-    answer: "A promise",
-  },
-  {
-    question: "What does async() always return  by default?",
-    answer: "A promise",
-  },
-  {
-    question: "Convention for naming boolean value for useState()?",
-    answer: "is and then the state name",
-  },
-  {
-    question: "Three states of fetching data?",
+      "What is the significance of the react-scripts package in a React application?",
     answer:
-      "Loading - waiting for data to arrive, Error - there was an error, Success - received data",
+      "react-scripts is a set of scripts and configurations used by Create React App to set up and manage a React Project without the need for complex configuration.",
   },
   {
-    question: "How do you focus on the input for a form?",
+    question: "Explain the concept of error boundaries in React.",
     answer:
-      "By having the htmlFor value of the label element and the id value of the input element match.",
+      "Error boundaries are components that catch JavaScript errors anywhere in their child component tree and log those errors, display a fallback UI, or take other actions.",
   },
   {
-    question: "Controlled inputs need what two things to work?",
-    answer: "value={} and onChange={}",
-  },
-  {
-    question: "What is used when you want to handle the form submission?",
-    answer: "preventDefault()",
-  },
-  {
-    question: "Describe useRef()",
+    question: "What is the purpose of the useReducer hook?",
     answer:
-      "Does not trigger re-render. Preserves the value between renders. Targets DOM nodes/elements directly",
+      "useReducer is a hook in React used for state management in functional components. It is particularly useful when the state logic is complex and involves multiple sub-values or when the next state depends on the previous state",
   },
   {
-    question: "Describe custom hooks.",
+    question: "How does react handle forms?",
     answer:
-      "Same rules as regular hooks. Simplify component, less code. Re-use in other projects.",
+      "React handles forms using controlled components, where the form elements are controlled by React state. This allows React to be the single source of truth for the form data.",
   },
-  {
-    question: "Describe useContext()",
-    answer:
-      "Allows parent to pass down props without having to go through other components to get to the intended component",
-  },
-  {
-    question: "Describe useReducer",
-    answer:
-      "useReducer is very similar to useState, but it lets you move the state update logic from event handlers into a single function outside of your component.",
-  },
-  {
-    question: "Describe HTTP methods",
-    answer:
-      "They define the types of actions that con be performed on a web server to retrieve, modify or delete information.",
-  },
-  {
-    question: "What are the most commonly used HTTP methods?",
-    answer: "GET, POST, PATCH, DELETE",
-  },
-  {
-    question: "What is the default HTTP method used by web browsers?",
-    answer: "GET",
-  },
-  {
-    question:
-      "Which HTTP method is used to send data to a server to create or update a resource?",
-    answer: "POST",
-  },
-  {
-    question: "Which HTTP method is used to update only part of a resource?",
-    answer: "PATCH",
-  },
-  {
-    question: "Which HTTP method is used to remove a resource from a server?",
-    answer: "DELETE",
-  },
-  {
-    question: "All HTTP methods combined is known as?",
-    answer: "CRUD (Create, Read, Update, and Delete)",
-  },
-  {
-    question: "Describe React Query",
-    answer:
-      "Is a state management library that simplifies the process of fetching, caching and updating data in React apps.",
-  },
-  {
-    question: "What are the benefits of React Query?",
-    answer:
-      "Automatic background refetching, caching and stale data management, error handling, and easy pagination and infinite scrolling.",
-  },
-  {
-    q: "React Query vs useEffect()",
-    answer:
-      "React Query provides a more declarative and centralized approach to managing data in React, which results in cleaner and more efficient code. It also reduces boilerplate code and improves performance by minimizing unnecessary re-renders and network requests.",
-  },
-  {
-    question:
-      "In React Query version 5, isLoading has been replaced with what?",
-    answer: "isPending",
-  },
-  {
-    question: "Describe useMutation",
-    answer:
-      "useMutation comes with some helper options that allow quick and easy side-effects at any stage during the mutation lifecycle. These come in handy for both invalidating and refetching queries after mutations",
-  },
-  {
-    question: "createContext.",
-    answer:
-      "Allows components to pass information deep down without explicitly passing props.",
-  },
-  // {
-  //   id: 81,
-  //   question: "queryClient",
-  //   answer: "",
-  // },
-  {
-    question: "What is SPA",
-    answer:
-      "Single-Page Application that dynamically updates its content without requiring a full page reload.",
-  },
-  {
-    question: "Describe React Router",
-    answer:
-      "It is a JavaScript library used in React applications to handle routing and navigation.",
-  },
-  {
-    question: "Describe <Outlet /> from react-router-dom",
-    answer: "",
-  },
-  // {
-  //   id: 0,
-  //   question: "",
-  //   answer: "",
-  // },
-  // {
-  //   id: 0,
-  //   question: "",
-  //   answer: "",
-  // },
-  // {
-  //   id: 0,
-  //   question: "",
-  //   answer: "",
-  // },
-  // {
-  //   id: 0,
-  //   question: "",
-  //   answer: "",
-  // },
-  // {
-  //   id: 0,
-  //   question: "",
-  //   answer: "",
-  // },
-  // {
-  //   id: 0,
-  //   question: "",
-  //   answer: "",
-  // },
-  // {
-  //   id: 0,
-  //   question: "",
-  //   answer: "",
-  // },
 ];
 
 export default questions;
