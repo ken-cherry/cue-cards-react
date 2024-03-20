@@ -384,41 +384,6 @@ const questions = [
     question: "Describe <Outlet /> from react-router-dom",
     answer: "",
   },
-  // {
-  //   id: 0,
-  //   question: "",
-  //   answer: "",
-  // },
-  // {
-  //   id: 0,
-  //   question: "",
-  //   answer: "",
-  // },
-  // {
-  //   id: 0,
-  //   question: "",
-  //   answer: "",
-  // },
-  // {
-  //   id: 0,
-  //   question: "",
-  //   answer: "",
-  // },
-  // {
-  //   id: 0,
-  //   question: "",
-  //   answer: "",
-  // },
-  // {
-  //   id: 0,
-  //   question: "",
-  //   answer: "",
-  // },
-  // {
-  //   id: 0,
-  //   question: "",
-  //   answer: "",
-  // },
 ];
 
 export default questions;

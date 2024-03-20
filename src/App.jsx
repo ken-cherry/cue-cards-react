@@ -7,7 +7,7 @@ function App() {
   const [index, setIndex] = useState(0);
   const [showAnswer, setShowAnswer] = useState(false);
 
-  const { id, question, answer } = questions[index];
+  const { question, answer } = questions[index];
 
   const checkNumber = (number) => {
     if (number > questions.length - 1) {
